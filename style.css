@@ -5,7 +5,7 @@ body {
   overflow: hidden;
 }
 
-/* Still state: dim, quiet dots */
+
 .dot {
   position: absolute;
   bottom: -60px;
@@ -13,18 +13,18 @@ body {
   height: 50px;
   border-radius: 50%;
   opacity: 0.2;
-  transition: opacity 1.5s, transform 1.5s;   /* smooth change */
+  transition: opacity 1.5s, transform 1.5s;  
   animation: float 8s ease-in infinite;
   animation-play-state: paused;
 }
 
-/* Hover anywhere: lights glow and start floating */
+
 body:hover .dot {
   opacity: 0.9;
   animation-play-state: running;
 }
 
-/* Click and hold: faster + bigger */
+
 body:active .dot {
   transform: scale(1.5);
   animation-duration: 3s;
